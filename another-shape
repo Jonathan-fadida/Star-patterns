@@ -1,0 +1,26 @@
+#!/bin/bash
+
+row=0
+col=0
+size=4
+
+while [[ $col -lt $size+1 ]]; do
+
+    while [[ $row -lt $size+1 ]] ; do   
+
+	if [[ $row = 4 ]] || [[ $row = $col ]] || [[ $col = 0 ]]; then
+        echo -n "*"
+    else    
+        echo -n " "
+    fi
+    let ++row    
+  
+    done
+    
+echo ""
+
+let row=0
+let col++
+
+
+done

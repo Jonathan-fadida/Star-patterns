@@ -1,0 +1,24 @@
+#!/bin/bash
+
+row=0
+col=0
+size=5
+
+while [[ $col -lt $size ]]; do
+
+    while [[ $row -lt $size ]] ; do   
+
+	if [[ $col+1 -gt $row ]]; then
+        echo -n "*"
+    fi
+        let row++
+ 
+    done
+    
+echo ""
+
+let row=0
+let col++
+
+
+done
